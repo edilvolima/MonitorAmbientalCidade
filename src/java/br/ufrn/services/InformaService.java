@@ -83,8 +83,8 @@ public class InformaService extends Service {
                                    add(new FunctionDescription(
                                                     TRASH,
                                                     "mostra o nível de lixo da lixeira e avisa quando a lixeira esta bem próxima de encher.",
-                                                    widget.getNonConstantAttributes(),
-                                                    FunctionDescription.FUNCTION_SYNC));
+                                                    widget.getNonConstantAttributes()));//,
+                                                    //FunctionDescription.FUNCTION_ASYNC));
                                    add(new FunctionDescription(
                                                     GATHERING,
                                                     "chama um agente de coleta mais próximo.",

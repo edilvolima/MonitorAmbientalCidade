@@ -25,6 +25,7 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 //                                         
 		//IN Widgets
 		dumpIN = WidgetXmlParser.createWidget("Informa/dump-widget-input.xml");
+                dumpIN.updateData("enableNotificatons", false);
                 dumpIN.updateData("area", area);
                 dumpIN.updateData("agentNearName", "agente 1");
                 dumpIN.setId(Integer.toString(area));
@@ -48,6 +49,8 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 //        String id = dumpIN.getId();
 //        if(Integer.parseInt(id) == area){
             dumpIN.updateData("content", content);
+            dumpIN.updateData("enableNotificatons", true);
+            dumpIN.updateData("enableNotificatons", false);
             System.out.println("atualizado quantidade de lixeira "+area+content);
 //        }
             

@@ -150,7 +150,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
    @Override
     public void atualizarQuantidadeLixo(Integer area, int content) {
         AtualizarDumpWidget dumpWidget = dumpWdgets.get(area);
-        
+       
         if(dumpWidget != null){
             dumpWidget.atualizarQuantidadeLixo(area, content);
         }

@@ -4,5 +4,6 @@
 		<Attribute name="content" type="int"/>
 		<Attribute name="agentNearName" type="string"/>
 		<Attribute name="area" type="int"/>
+                <Attribute name="enableNotificatons" type="boolean"/>
 	</Attributes>	
 </Widget>

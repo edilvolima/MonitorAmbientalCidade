@@ -38,6 +38,7 @@ public class InstanciaWidget {
         }
         return INSTANCIA_WIDGET;
     }
+    
     AtualizarWidgets atualizador = ConcreteAtualizarWidgets.getInstance();
     
 //      AtualizarWidgets atualizador = ConcreteAtualizarWidgets.getInstance();

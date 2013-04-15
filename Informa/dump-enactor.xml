@@ -8,8 +8,9 @@
 	
 	<Reference name="empty">
 		<Query name="empty">
-			(
-				EQUAL content 0
+			( AND
+				(EQUAL content 0)
+                                (EQUAL enableNotificatons true)
 			)
 		</Query>
 		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"VAZIA"</Outcome>
@@ -23,6 +24,7 @@
 			(AND
 				(GREATER content 0)
 				(LESS content 225)
+                                (EQUAL enableNotificatons true)
 			)
 		</Query>
 		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"ENCHENDO"</Outcome>
@@ -35,8 +37,9 @@
         
         	<Reference name="flood">
 		<Query name="flood">
-			(
-                            EQUAL content 250
+			(AND
+                            (EQUAL content 250)
+                            (EQUAL enableNotificatons true)
 			)
 		</Query>
 		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"CHEIA"</Outcome>
@@ -47,8 +50,9 @@
         
 	<Reference name="limit">
 		<Query name="limit">
-			(
-                            EQUAL content 225
+			(AND
+                            (EQUAL content 225)
+                            (EQUAL enableNotificatons true)
 			)
 		</Query>
 		<Outcome outAttribute="dump">area+";"+"trashGathering;"+"LIMITE;"+agentNearName</Outcome>
@@ -59,8 +63,9 @@
         
        	<Reference name="floodGathering">
 		<Query name="floodGathering">
-			(
-                            EQUAL content 250
+			(AND
+                            (EQUAL content 250)
+                            (EQUAL enableNotificatons true)
 			)
 		</Query>
 		<Outcome outAttribute="dump">area+";"+"trashGathering;"+"CHEIA;"+agentNearName</Outcome>
