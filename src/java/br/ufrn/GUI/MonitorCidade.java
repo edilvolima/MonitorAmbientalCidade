@@ -122,11 +122,11 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
         jPanel5.add(LabeAciA1);
-        LabeAciA1.setBounds(180, 10, 32, 35);
+        LabeAciA1.setBounds(200, 10, 32, 35);
 
         LabeAgeA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
         jPanel5.add(LabeAgeA1);
-        LabeAgeA1.setBounds(60, 50, 32, 32);
+        LabeAgeA1.setBounds(70, 50, 32, 32);
 
         LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemBuzina.png"))); // NOI18N
         jPanel5.add(LabeSomA1);
@@ -134,7 +134,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
         jPanel5.add(LabeFogoA1);
-        LabeFogoA1.setBounds(140, 10, 32, 35);
+        LabeFogoA1.setBounds(160, 10, 32, 35);
 
         LabelLixoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/LixoVazia.png"))); // NOI18N
         jPanel5.add(LabelLixoA1);
@@ -150,23 +150,23 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
         jPanel5.add(LabePolA1);
-        LabePolA1.setBounds(220, 10, 32, 35);
+        LabePolA1.setBounds(240, 10, 32, 35);
 
         LabelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
         jPanel5.add(LabelCarroA1);
-        LabelCarroA1.setBounds(100, 50, 30, 30);
+        LabelCarroA1.setBounds(120, 50, 30, 30);
 
         LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
         jPanel5.add(LabelSecQueA1);
-        LabelSecQueA1.setBounds(140, 50, 30, 30);
+        LabelSecQueA1.setBounds(160, 50, 30, 30);
 
         LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
         jPanel5.add(LabelSolA1);
-        LabelSolA1.setBounds(180, 40, 32, 50);
+        LabelSolA1.setBounds(200, 40, 32, 50);
 
         LabelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
         jPanel5.add(LabelNuvMovA1);
-        LabelNuvMovA1.setBounds(220, 50, 40, 30);
+        LabelNuvMovA1.setBounds(240, 50, 40, 30);
 
         Balao1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao 1.png"))); // NOI18N
         Balao1.setText("jLabel2");
@@ -213,15 +213,15 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
         jPanel8.add(LabeFogoA2);
-        LabeFogoA2.setBounds(170, 20, 32, 32);
+        LabeFogoA2.setBounds(180, 20, 32, 32);
 
         LabeAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
         jPanel8.add(LabeAciA2);
-        LabeAciA2.setBounds(210, 20, 32, 32);
+        LabeAciA2.setBounds(220, 20, 32, 32);
 
         LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
         jPanel8.add(LabePolA2);
-        LabePolA2.setBounds(250, 20, 32, 32);
+        LabePolA2.setBounds(260, 20, 32, 32);
 
         LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/temp3.png"))); // NOI18N
         jPanel8.add(LabeTempA2);
@@ -229,23 +229,23 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeAgeA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
         jPanel8.add(LabeAgeA2);
-        LabeAgeA2.setBounds(90, 60, 32, 32);
+        LabeAgeA2.setBounds(100, 60, 32, 32);
 
         LabelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
         jPanel8.add(LabelCarroA2);
-        LabelCarroA2.setBounds(130, 60, 30, 30);
+        LabelCarroA2.setBounds(140, 60, 30, 30);
 
         LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
         jPanel8.add(LabelSecQueA2);
-        LabelSecQueA2.setBounds(170, 60, 30, 30);
+        LabelSecQueA2.setBounds(180, 60, 30, 30);
 
         LabelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
         jPanel8.add(LabelNuvMovA2);
-        LabelNuvMovA2.setBounds(250, 60, 40, 30);
+        LabelNuvMovA2.setBounds(260, 60, 40, 30);
 
         LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
         jPanel8.add(LabelSolA2);
-        LabelSolA2.setBounds(210, 50, 32, 50);
+        LabelSolA2.setBounds(220, 50, 32, 50);
 
         Balao2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao 2.png"))); // NOI18N
         jPanel8.add(Balao2);
@@ -277,15 +277,15 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
         jPanel9.add(LabeFogoA3);
-        LabeFogoA3.setBounds(180, 20, 32, 32);
+        LabeFogoA3.setBounds(200, 20, 32, 32);
 
         LabeAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
         jPanel9.add(LabeAciA3);
-        LabeAciA3.setBounds(220, 20, 32, 32);
+        LabeAciA3.setBounds(240, 20, 32, 32);
 
         LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
         jPanel9.add(LabePolA3);
-        LabePolA3.setBounds(260, 20, 32, 32);
+        LabePolA3.setBounds(280, 20, 32, 32);
 
         LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/temp3.png"))); // NOI18N
         jPanel9.add(LabeTempA3);
@@ -293,23 +293,23 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeAgeA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
         jPanel9.add(LabeAgeA3);
-        LabeAgeA3.setBounds(100, 60, 32, 32);
+        LabeAgeA3.setBounds(120, 60, 32, 32);
 
         LabelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
         jPanel9.add(LabelCarroA3);
-        LabelCarroA3.setBounds(140, 60, 30, 30);
+        LabelCarroA3.setBounds(160, 60, 30, 30);
 
         LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
         jPanel9.add(LabelSecQueA3);
-        LabelSecQueA3.setBounds(180, 60, 30, 30);
+        LabelSecQueA3.setBounds(200, 60, 30, 30);
 
         LabelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
         jPanel9.add(LabelNuvMovA3);
-        LabelNuvMovA3.setBounds(260, 60, 40, 30);
+        LabelNuvMovA3.setBounds(280, 60, 40, 30);
 
         LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
         jPanel9.add(LabelSolA3);
-        LabelSolA3.setBounds(220, 50, 32, 50);
+        LabelSolA3.setBounds(240, 50, 32, 50);
 
         Balao3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao 3.png"))); // NOI18N
         jPanel9.add(Balao3);
@@ -329,7 +329,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeAgeA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/CaminhaoDesativado.png"))); // NOI18N
         jPanel10.add(LabeAgeA4);
-        LabeAgeA4.setBounds(70, 60, 32, 32);
+        LabeAgeA4.setBounds(80, 60, 32, 32);
 
         LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/temp3.png"))); // NOI18N
         jPanel10.add(LabeTempA4);
@@ -349,31 +349,31 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
         LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/SemFogo.png"))); // NOI18N
         jPanel10.add(LabeFogoA4);
-        LabeFogoA4.setBounds(150, 20, 32, 32);
+        LabeFogoA4.setBounds(160, 20, 32, 32);
 
         LabeAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemSemAcida.png"))); // NOI18N
         jPanel10.add(LabeAciA4);
-        LabeAciA4.setBounds(190, 20, 32, 32);
+        LabeAciA4.setBounds(200, 20, 32, 32);
 
         LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/NuvemVerdeEstado1.png"))); // NOI18N
         jPanel10.add(LabePolA4);
-        LabePolA4.setBounds(230, 20, 32, 32);
+        LabePolA4.setBounds(240, 20, 32, 32);
 
         LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/carroSem.png"))); // NOI18N
         jPanel10.add(LabelCarroA4);
-        LabelCarroA4.setBounds(110, 60, 30, 30);
+        LabelCarroA4.setBounds(120, 60, 30, 30);
 
         LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon-sem.png"))); // NOI18N
         jPanel10.add(LabelSecQueA4);
-        LabelSecQueA4.setBounds(150, 60, 30, 30);
+        LabelSecQueA4.setBounds(160, 60, 30, 30);
 
         LabelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/no-wind-cloud.png"))); // NOI18N
         jPanel10.add(LabelNuvMovA4);
-        LabelNuvMovA4.setBounds(230, 60, 40, 30);
+        LabelNuvMovA4.setBounds(240, 60, 40, 30);
 
         LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/Semsol.png"))); // NOI18N
         jPanel10.add(LabelSolA4);
-        LabelSolA4.setBounds(190, 50, 32, 50);
+        LabelSolA4.setBounds(200, 50, 32, 50);
 
         Balao4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao 4.png"))); // NOI18N
         jPanel10.add(Balao4);
@@ -684,17 +684,33 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 LabelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
                 //seta icone ligado
             } else if (vehicleFlow.equals("TRAFEGO_OFF")) {
+                LabelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
                 //seta icone OFF
             }
         } else if (area.equals(2)) {
-            LabelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-            //seta icone ligado
+            if (vehicleFlow.equals("TRAFEGO_ON")) {
+                LabelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                //seta icone ligado
+            } else if (vehicleFlow.equals("TRAFEGO_OFF")) {
+                LabelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+                //seta icone OFF
+            }
         } else if (area.equals(3)) {
-            LabelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-            //seta icone ligado
+            if (vehicleFlow.equals("TRAFEGO_ON")) {
+                LabelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                //seta icone ligado
+            } else if (vehicleFlow.equals("TRAFEGO_OFF")) {
+                LabelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+                //seta icone OFF
+            }
         } else if (area.equals(4)) {
-            LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-            //seta icone ligado
+            if (vehicleFlow.equals("TRAFEGO_ON")) {
+                LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                //seta icone ligado
+            } else if (vehicleFlow.equals("TRAFEGO_OFF")) {
+                LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+                //seta icone OFF
+            }
         }
     }
 
@@ -706,17 +722,33 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 LabeChuvaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
                 //seta icone ligado
             } else if (willRain.equals("RAIN_OFF")) {
+                LabeChuvaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
                 //seta icone OFF
             }
         } else if (area.equals(2)) {
-            LabeChuvaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-            //seta icone ligado
+            if (willRain.equals("RAIN_ON")) {
+                LabeChuvaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                //seta icone ligado
+            } else if (willRain.equals("RAIN_OFF")) {
+                LabeChuvaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+                //seta icone OFF
+            }
         } else if (area.equals(3)) {
-            LabeChuvaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-            //seta icone ligado
+            if (willRain.equals("RAIN_ON")) {
+                LabeChuvaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                //seta icone ligado
+            } else if (willRain.equals("RAIN_OFF")) {
+                LabeChuvaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+                //seta icone OFF
+            }
         } else if (area.equals(4)) {
-            LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-            //seta icone ligado
+            if (willRain.equals("RAIN_ON")) {
+                LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                //seta icone ligado
+            } else if (willRain.equals("RAIN_OFF")) {
+                LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+                //seta icone OFF
+            }
         }
     }
 
@@ -731,6 +763,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 LabelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
             } else if (localAcidRain.equals("ACID_OFF")) {
+                LabeAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
                 //seta icone chuva acida OFF
             }
         } else if (area.equals(2)) {
@@ -740,6 +773,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
+            } else if (localAcidRain.equals("ACID_OFF")) {
+                LabeAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+                //seta icone chuva acida OFF
             }
         } else if (area.equals(3)) {
             if (localAcidRain.equals("AQUI")) {
@@ -748,6 +784,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
+            } else if (localAcidRain.equals("ACID_OFF")) {
+                LabeAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+                //seta icone chuva acida OFF
             }
         } else if (area.equals(4)) {
             if (localAcidRain.equals("AQUI")) {
@@ -756,6 +795,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
+            } else if (localAcidRain.equals("ACID_OFF")) {
+                LabeAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+                //seta icone chuva acida OFF
             }
         }
     }
@@ -767,25 +809,45 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             if (noise.equals("NOISE_ON")) {
                 if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
                     LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    LabeSomA1.setText("" + db);
                     //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
                 }
             } else if (noise.equals("NOISE_OFF")) {
+                LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
                 //setar icone OFF
             }
         } else if (area.equals(2)) {
-            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
-                LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+            if (noise.equals("NOISE_ON")) {
+                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    LabeSomA2.setText("" + db);
+                    //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                }
+            } else if (noise.equals("NOISE_OFF")) {
+                LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                //setar icone OFF
             }
         } else if (area.equals(3)) {
-            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
-                LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+            if (noise.equals("NOISE_ON")) {
+                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    LabeSomA3.setText("" + db);
+                    //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                }
+            } else if (noise.equals("NOISE_OFF")) {
+                LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                //setar icone OFF
             }
         } else if (area.equals(4)) {
-            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
-                LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+            if (noise.equals("NOISE_ON")) {
+                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    LabeSomA4.setText("" + db);
+                    //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                }
+            } else if (noise.equals("NOISE_OFF")) {
+                LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                //setar icone OFF
             }
         }
     }
@@ -1039,7 +1101,6 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 //seta o icone de cheia e diz que chamou o agente
             } else if (status.equals("GATHERING_OFF")) {
                 //setar o icone OFF do agente
-                
             }
         } else if (area.equals(2)) {
             if (status.equals("LIMITE")) {
