@@ -111,7 +111,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         jLabel54 = new javax.swing.JLabel();
         LabelCarroA5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        LabelUmiA5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -423,8 +423,8 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/eyes-on-fire-icon.png"))); // NOI18N
         jLabel6.setText("Quente e Seco");
 
-        LabelUmiA5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/drop.png"))); // NOI18N
-        LabelUmiA5.setText("Umidade");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/sol.png"))); // NOI18N
+        jLabel2.setText("Tempo Bom");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -443,7 +443,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                         .addComponent(jLabel54)
                         .addComponent(LabelCarroA5)
                         .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(LabelUmiA5))
+                    .addComponent(jLabel2))
                 .addGap(0, 20, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -469,9 +469,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
                 .addComponent(LabelCarroA5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LabelUmiA5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel7);
@@ -579,8 +579,8 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
     private javax.swing.JLabel LabelSolA2;
     private javax.swing.JLabel LabelSolA3;
     private javax.swing.JLabel LabelSolA4;
-    private javax.swing.JLabel LabelUmiA5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
@@ -912,60 +912,108 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
     @Override
     public void atualizaClimaBom(Integer area, boolean clima) {
         if(area.equals(1)) {
-            LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(clima == true){
+                 LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
             //seta icone ligado
+            }else{
+                 LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+            }
         }
         else if(area.equals(2)) {
-            LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(clima == true){
+                 LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
             //seta icone ligado
+            }else{
+                 LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+            }
         }
         else if(area.equals(3)) {
-            LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(clima == true){
+                 LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
             //seta icone ligado
+            }else{
+                 LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+            }
         }
         else if(area.equals(4)) {
-            LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(clima == true){
+                 LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
             //seta icone ligado
+            }else{
+                 LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+            }
         }
     }
 
     @Override
     public void atualizaIncidenciaDeIncendio(Integer area, boolean isFire) {
         if(area.equals(1)) {
-            LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
+            if(isFire == true){
+                LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
             //seta icone ligado
+            }else{
+                LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
+            }
         }
         else if(area.equals(2)) {
-            LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
+            if(isFire == true){
+                LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
             //seta icone ligado
+            }else{
+                LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
+            }
         }
         else if(area.equals(3)) {
-            LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
+            if(isFire == true){
+                LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
             //seta icone ligado
+            }else{
+                LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
+            }
         }
         else if(area.equals(4)) {
-            LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
+            if(isFire == true){
+                LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
             //seta icone ligado
+            }else{
+                LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
+            }
         }
     }
 
     @Override
     public void atualizaClimaQuenteESeco(Integer area, boolean hotDry) {
         if(area.equals(1)) {
-            LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(hotDry == true){
+               LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
             //seta icone ligado
+            }else{
+               LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+            }
         }
         else if(area.equals(2)) {
-            LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(hotDry == true){
+               LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
             //seta icone ligado
+            }else{
+               LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+            }
         }
         else if(area.equals(3)) {
-            LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(hotDry == true){
+               LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
             //seta icone ligado
+            }else{
+               LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+            }
         }
         else if(area.equals(4)) {
-            LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+            if(hotDry == true){
+               LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
             //seta icone ligado
+            }else{
+               LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+            }
         }
     }
     
