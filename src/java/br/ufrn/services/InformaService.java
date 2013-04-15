@@ -33,7 +33,7 @@ public class InformaService extends Service {
     
        
             @SuppressWarnings("serial")
-            public InformaService(final Widget widget/*, MonitorCidade cidade*/) {
+            public InformaService(final Widget widget) {
                     super(widget, SERVICE,
                                     new FunctionDescriptions() {
                             { // constructor
@@ -93,66 +93,68 @@ public class InformaService extends Service {
                             }
                     });
 
-//                    this.cidade = cidade;
-
             }
 
             @Override
              public DataObject execute(ServiceInput serviceInput) {
                     
-                    String functionName = serviceInput.getFunctionName();   
+                   String functionName = serviceInput.getFunctionName(); 
                     
-                    //String contextPollution = serviceInput.getInput().getAttributeValue("pollution");
-                    //System.out.println(contextPollution);
-                    
-                    //String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
-                    //System.out.println(contextTemperature);
-                    
-                    String contextDump = serviceInput.getInput().getAttributeValue("dump");
-                    //System.out.println(contextDump);
-                   
                     /**
                      *POLLUTION FUNCTIONS
                      */
                                        
                     //Index Pollution
                     if (functionName.equals(POLLUTION)) {
-                        String contextPollution = serviceInput.getInput().getAttributeValue("pollution");
-                        String valoresP[] = contextPollution.split(";");
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresP[] = context.split(";");
 
-                        if (valoresP[2].equals("TRAFEGO")) {
-                            cidade.atualizaFluxoVeiculos(Integer.parseInt(valoresP[0]));
-                        }else {
+                        if (valoresP[2].equals("TRAFEGO_ON")) {
+                            cidade.atualizaFluxoVeiculos(Integer.parseInt(valoresP[0]), valoresP[2]);
+                        }
+                        else if (valoresP[2].equals("TRAFEGO_OFF")){
+                            cidade.atualizaFluxoVeiculos(Integer.parseInt(valoresP[0]), valoresP[2]);
+                        }
+                        else {
                             cidade.atualizaNivelPoluicao(Integer.parseInt(valoresP[0]), valoresP[2]);
-                            System.out.println(contextPollution);
                         }
                             
                     }   
                    
                     //Will Rain
                     else if (functionName.equals(WILL_RAIN)) {
-                        String contextPollution = serviceInput.getInput().getAttributeValue("pollution");
-                        String valoresP[] = contextPollution.split(";");
-                        cidade.atualizaProbabilidaDeChuva(Integer.parseInt(valoresP[0]));
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresP[] = context.split(";");
+                        
+                        if (valoresP[2].equals("RAIN_ON")) {
+                            cidade.atualizaProbabilidaDeChuva(Integer.parseInt(valoresP[0]), valoresP[2]);
+                        }
+                        else if (valoresP[2].equals("RAIN_OFF")){
+                            cidade.atualizaProbabilidaDeChuva(Integer.parseInt(valoresP[0]), valoresP[2]);
+                        }
+                        
                     }
                     
                     //Acid Rain
                     else if (functionName.equals(ACID_RAIN)) {
-                        String contextPollution = serviceInput.getInput().getAttributeValue("pollution");
-                        String valoresP[] = contextPollution.split(";");
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresP[] = context.split(";");
                                                 
                         if (valoresP[2].equals("AQUI")) {
                             cidade.atualizaChuvaAcida(Integer.parseInt(valoresP[0]), valoresP[2], null);
                         }else if (valoresP[2].equals("OUTRO")) {
                             cidade.atualizaChuvaAcida(Integer.parseInt(valoresP[0]), valoresP[2], valoresP[3]);
+                        }else if (valoresP[2].equals("ACID_OFF")) {
+                            cidade.atualizaChuvaAcida(Integer.parseInt(valoresP[0]), valoresP[2], null);
                         }
                     }
                     
                     //Noise
                     else if (functionName.equals(NOISE)) {
-                        String contextPollution = serviceInput.getInput().getAttributeValue("pollution");
-                        String valoresP[] = contextPollution.split(";");
-                        cidade.atualizaQuantidadeRuido(Integer.parseInt(valoresP[0]),Integer.parseInt(valoresP[2]));                  
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresP[] = context.split(";");
+                        
+                        cidade.atualizaQuantidadeRuido(Integer.parseInt(valoresP[0]),valoresP[2], Integer.parseInt(valoresP[3]));                  
                     }
                     
                     /**
@@ -161,31 +163,51 @@ public class InformaService extends Service {
                     
                     // Temperature
                     else if (functionName.equals(TEMPERATURE)) {
-                        String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
-                        String valoresT[] = contextTemperature.split(";");
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresT[] = context.split(";");
+                        
                         cidade.atualizaTemperatura(Integer.parseInt(valoresT[0]), Float.parseFloat(valoresT[2]));
-                           System.out.println(contextTemperature);
                     }
                     
                     // beautiful Weather
                     else if (functionName.equals(BEATIFUL_WEATHER)) {
-                        String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
-                        String valoresT[] = contextTemperature.split(";");
-                        cidade.atualizaClimaBom(Integer.parseInt(valoresT[0]), true);                       
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresT[] = context.split(";");
+                        
+                        if(valoresT[2].equals("BEAUTIFUL_ON")) {
+                            cidade.atualizaClimaBom(Integer.parseInt(valoresT[0]), true);                       
+                        }
+                        else if(valoresT[2].equals("BEAUTIFUL_OFF")) {
+                            cidade.atualizaClimaBom(Integer.parseInt(valoresT[0]), false);                       
+                        }
+                        
                     }
                     
                     //is fire?
                     else if (functionName.equals(IS_FIRE)) {
-                        String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
-                        String valoresT[] = contextTemperature.split(";");
-                        cidade.atualizaIncidenciaDeIncendio(Integer.parseInt(valoresT[0]), true); 
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresT[] = context.split(";");
+                        
+                        if(valoresT[2].equals("FIRE_ON")) {
+                            cidade.atualizaIncidenciaDeIncendio(Integer.parseInt(valoresT[0]), true); 
+                        }
+                        else if(valoresT[2].equals("FIRE_OFF")) {
+                            cidade.atualizaIncidenciaDeIncendio(Integer.parseInt(valoresT[0]), false); 
+                        }
                     }
                     
                     // Hot and dry weather
                     else if (functionName.equals(HOT_DRY)) {
-                        String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
-                        String valoresT[] = contextTemperature.split(";");
-                        cidade.atualizaClimaQuenteESeco(Integer.parseInt(valoresT[0]), true); 
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresT[] = context.split(";");
+                        
+                        if(valoresT[2].equals("HOTDRY_ON")) {
+                            cidade.atualizaClimaQuenteESeco(Integer.parseInt(valoresT[0]), true); 
+                        }
+                        else if(valoresT[2].equals("HOTDRY_OFF")) {
+                            cidade.atualizaClimaQuenteESeco(Integer.parseInt(valoresT[0]), false); 
+                        }
+                        
                     }
                     
                     /**
@@ -195,9 +217,9 @@ public class InformaService extends Service {
 //                     Dump situation
                     
                     else if (functionName.equals(TRASH)) {
-                        //String contextDump = serviceInput.getInput().getAttributeValue("dump");
-                        String valoresD[] = contextDump.split(";");
-                        System.out.println(contextDump);
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresD[] = context.split(";");
+                        System.out.println(context);
                                                
                         if (valoresD[2].equals("VAZIA")) {
                             cidade.atualizaQuantidadeLixo(Integer.parseInt(valoresD[0]), valoresD[2]);   
@@ -208,18 +230,16 @@ public class InformaService extends Service {
                         }else if (valoresD[2].equals("CHEIA")) {
                             cidade.atualizaQuantidadeLixo(Integer.parseInt(valoresD[0]),valoresD[2]);  
                             System.out.println("usando funcao do servico para "+valoresD[1]+" da area "+valoresD[0]);
-                        }else{
-                            System.out.println("sem alteracao no contexto "+valoresD[1]+" da area "+valoresD[0]);
-                        }                       
+                        }                      
                     }
                     // alerts you when is borderline calls and agent catcher.
                     else if (functionName.equals(GATHERING)) {
-                        //String contextDump = serviceInput.getInput().getAttributeValue("dump");
-                        String valoresD[] = contextDump.split(";");
-                        //System.out.println(contextDump);
+                        String context = serviceInput.getInput().getAttributeValue("area");
+                        String valoresD[] = context.split(";");
+                        System.out.println(context);
                                                 
                         if (valoresD[2].equals("LIMITE")) {
-                            cidade.atualizaAgenteProximo(Integer.parseInt(valoresD[0]),valoresD[2], valoresD[3]);
+                            cidade.atualizaAgenteProximo(Integer.parseInt(valoresD[0]),valoresD[2], null);
                             //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
                         }else if (valoresD[2].equals("CHEIA")) {
                             cidade.atualizaAgenteProximo(Integer.parseInt(valoresD[0]),valoresD[2], valoresD[3]);

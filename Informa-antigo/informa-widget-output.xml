@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Widget xmlns="http://www.contexttoolkit.org/ctk" name="informaWidget">		
+	<Attributes>
+		<Attribute name="pollution" type="string"/>
+		<Attribute name="temperature" type="string"/>
+		<Attribute name="dump" type="string"/>
+                <Attribute name="area" type="int"/>
+	</Attributes>	
+</Widget>

@@ -7,6 +7,8 @@ import context.arch.enactor.EnactorXmlParser;
 import context.arch.storage.Attributes;
 import context.arch.widget.Widget;
 import context.arch.widget.WidgetXmlParser;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class MonitoramentoLixeira implements AtualizarDumpWidget{
@@ -24,11 +26,11 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 		
 //                                         
 		//IN Widgets
-		dumpIN = WidgetXmlParser.createWidget("Informa/dump-widget-input.xml");
+		dumpIN = WidgetXmlParser.createWidget("Informa/dump-widget-input_"+area.toString()+".xml");
                 dumpIN.updateData("enableNotificatons", false);
                 dumpIN.updateData("area", area);
                 dumpIN.updateData("agentNearName", "agente 1");
-                dumpIN.setId(Integer.toString(area));
+                //dumpIN.setId(Integer.toString(area));
                         
                 
 		//OUT Widgets and Service
@@ -39,28 +41,23 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 		informaOUT.addService(informaService);
 		
 		//Enactors
-		enactorDump = EnactorXmlParser.createEnactor("Informa/dump-enactor.xml");
+		enactorDump = EnactorXmlParser.createEnactor("Informa/dump-enactor_"+area.toString()+".xml");
                             
 
 	}
 
     @Override
     public void atualizarQuantidadeLixo(Integer area, int content) {
-//        String id = dumpIN.getId();
-//        if(Integer.parseInt(id) == area){
+        
             dumpIN.updateData("content", content);
-            dumpIN.updateData("enableNotificatons", true);
-            dumpIN.updateData("enableNotificatons", false);
             System.out.println("atualizado quantidade de lixeira "+area+content);
-//        }
+
             
     }
 
     @Override
     public void atualizarAgenteProximo(Integer area, String agentNearName) {
-         //if(dumpIN.getNonConstantAttributeValue("area")) {
             dumpIN.updateData("agentNearName", agentNearName);
-        //}
     }
 	
 }

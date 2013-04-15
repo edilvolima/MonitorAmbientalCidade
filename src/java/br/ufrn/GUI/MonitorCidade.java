@@ -11,24 +11,22 @@ import java.util.Calendar;
  *
  * @author Zeff
  */
-public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor{
+public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor {
 
     /**
      * Creates new form MonitorCidade
      */
-    
     private static final MonitorCidade MONITOR_CIDADE = new MonitorCidade();
-    
-    public static MonitorCidade getInstance(){
+
+    public static MonitorCidade getInstance() {
         MONITOR_CIDADE.setVisible(true);
         return MONITOR_CIDADE;
     }
-    
+
     private MonitorCidade() {
         initComponents();
     }
 
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -601,98 +599,77 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
-    
-    
+
     //POLLUTION MONITOR
-    
     @Override
     public void atualizaNivelPoluicao(Integer area, String levelPollution) {
-        
+        //levelPollution= BOA, REGULAR, INADEQUADA, MÁ, PÉSSIMA
         if (area.equals(1)) {
-            if(levelPollution.equals("BOA")) {
+            if (levelPollution.equals("BOA")) {
                 LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                 //setar o icone pra boa
-            }
-            else if(levelPollution.equals("REGULAR")) {
+            } else if (levelPollution.equals("REGULAR")) {
                 LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                 //setar icone pra regular
-            }
-            else if(levelPollution.equals("INADEQUADA")) {
+            } else if (levelPollution.equals("INADEQUADA")) {
                 LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                 //setar icone pra inadequada
-            }
-            else if(levelPollution.equals("MÁ")) {
+            } else if (levelPollution.equals("MÁ")) {
                 LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                 //setar icone pra ma
-            }
-            else if(levelPollution.equals("PÉSSIMA")) {
+            } else if (levelPollution.equals("PÉSSIMA")) {
                 LabePolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                 //setar icone pra pessima
             }
-            
-        }
-        else if(area.equals(2)) {
-            if(levelPollution.equals("BOA")) {
+
+        } else if (area.equals(2)) {
+            if (levelPollution.equals("BOA")) {
                 LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                 //setar o icone pra boa
-            }
-            else if(levelPollution.equals("REGULAR")) {
+            } else if (levelPollution.equals("REGULAR")) {
                 LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                 //setar icone pra regular
-            }
-            else if(levelPollution.equals("INADEQUADA")) {
+            } else if (levelPollution.equals("INADEQUADA")) {
                 LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                 //setar icone pra inadequada
-            }
-            else if(levelPollution.equals("MÁ")) {
+            } else if (levelPollution.equals("MÁ")) {
                 LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                 //setar icone pra ma
-            }
-            else if(levelPollution.equals("PÉSSIMA")) {
+            } else if (levelPollution.equals("PÉSSIMA")) {
                 LabePolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                 //setar icone pra pessima
             }
-        }
-        else if(area.equals(3)) {
-            if(levelPollution.equals("BOA")) {
+        } else if (area.equals(3)) {
+            if (levelPollution.equals("BOA")) {
                 LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                 //setar o icone pra boa
-            }
-            else if(levelPollution.equals("REGULAR")) {
+            } else if (levelPollution.equals("REGULAR")) {
                 LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                 //setar icone pra regular
-            }
-            else if(levelPollution.equals("INADEQUADA")) {
+            } else if (levelPollution.equals("INADEQUADA")) {
                 LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                 //setar icone pra inadequada
-            }
-            else if(levelPollution.equals("MÁ")) {
+            } else if (levelPollution.equals("MÁ")) {
                 LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                 //setar icone pra ma
-            }
-            else if(levelPollution.equals("PÉSSIMA")) {
+            } else if (levelPollution.equals("PÉSSIMA")) {
                 LabePolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                 //setar icone pra pessima
             }
-        }
-        else if(area.equals(4)) {
-            if(levelPollution.equals("BOA")) {
+        } else if (area.equals(4)) {
+            if (levelPollution.equals("BOA")) {
                 LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                 //setar o icone pra boa
-            }
-            else if(levelPollution.equals("REGULAR")) {
+            } else if (levelPollution.equals("REGULAR")) {
                 LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                 //setar icone pra regular
-            }
-            else if(levelPollution.equals("INADEQUADA")) {
+            } else if (levelPollution.equals("INADEQUADA")) {
                 LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                 //setar icone pra inadequada
-            }
-            else if(levelPollution.equals("MÁ")) {
+            } else if (levelPollution.equals("MÁ")) {
                 LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                 //setar icone pra ma
-            }
-            else if(levelPollution.equals("PÉSSIMA")) {
+            } else if (levelPollution.equals("PÉSSIMA")) {
                 LabePolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                 //setar icone pra pessima
             }
@@ -700,40 +677,44 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
     }
 
     @Override
-    public void atualizaFluxoVeiculos(Integer area) {
-        if(area.equals(1)) {
-            LabelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-            //seta icone ligado
-        }
-        else if(area.equals(2)) {
+    public void atualizaFluxoVeiculos(Integer area, String vehicleFlow) {
+        //vehicleFlow = TRAFEGO_ON, TRAFEGO_OFF
+        if (area.equals(1)) {
+            if (vehicleFlow.equals("TRAFEGO_ON")) {
+                LabelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                //seta icone ligado
+            } else if (vehicleFlow.equals("TRAFEGO_OFF")) {
+                //seta icone OFF
+            }
+        } else if (area.equals(2)) {
             LabelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
             //seta icone ligado
-        }
-        else if(area.equals(3)) {
+        } else if (area.equals(3)) {
             LabelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
             //seta icone ligado
-        }
-        else if(area.equals(4)) {
+        } else if (area.equals(4)) {
             LabelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
             //seta icone ligado
         }
     }
 
     @Override
-    public void atualizaProbabilidaDeChuva(Integer area) {
-        if(area.equals(1)) {
-            LabeChuvaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-            //seta icone ligado
-        }
-        else if(area.equals(2)) {
+    public void atualizaProbabilidaDeChuva(Integer area, String willRain) {
+        //willRain = RAIN_ON ou RAIN_OFF
+        if (area.equals(1)) {
+            if (willRain.equals("RAIN_ON")) {
+                LabeChuvaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                //seta icone ligado
+            } else if (willRain.equals("RAIN_OFF")) {
+                //seta icone OFF
+            }
+        } else if (area.equals(2)) {
             LabeChuvaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
             //seta icone ligado
-        }
-        else if(area.equals(3)) {
+        } else if (area.equals(3)) {
             LabeChuvaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
             //seta icone ligado
-        }
-        else if(area.equals(4)) {
+        } else if (area.equals(4)) {
             LabeChuvaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
             //seta icone ligado
         }
@@ -741,42 +722,38 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
     @Override
     public void atualizaChuvaAcida(Integer area, String localAcidRain, String directionWind) {
-        if(area.equals(1)) {
-            if(localAcidRain.equals("AQUI")) {
+        //localAcidRain = AQUI, OUTRO, ACID_OFF
+        if (area.equals(1)) {
+            if (localAcidRain.equals("AQUI")) {
                 LabeAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
                 //seta icone chuva acida na mesma area
-            }
-            else if(localAcidRain.equals("OUTRO")) {
+            } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
+            } else if (localAcidRain.equals("ACID_OFF")) {
+                //seta icone chuva acida OFF
             }
-        }
-        else if(area.equals(2)) {
-            if(localAcidRain.equals("AQUI")) {
+        } else if (area.equals(2)) {
+            if (localAcidRain.equals("AQUI")) {
                 LabeAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
                 //seta icone chuva acida na mesma area
-            }
-            else if(localAcidRain.equals("OUTRO")) {
+            } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
             }
-        }
-        else if(area.equals(3)) {
-            if(localAcidRain.equals("AQUI")) {
+        } else if (area.equals(3)) {
+            if (localAcidRain.equals("AQUI")) {
                 LabeAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
                 //seta icone chuva acida na mesma area
-            }
-            else if(localAcidRain.equals("OUTRO")) {
+            } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
             }
-        }
-        else if(area.equals(4)) {
-            if(localAcidRain.equals("AQUI")) {
+        } else if (area.equals(4)) {
+            if (localAcidRain.equals("AQUI")) {
                 LabeAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
                 //seta icone chuva acida na mesma area
-            }
-            else if(localAcidRain.equals("OUTRO")) {
+            } else if (localAcidRain.equals("OUTRO")) {
                 LabelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
                 //seta icone chuva acida que vai pra outra area e usar a directionWind pra informar pra que lado ela está indo
             }
@@ -784,124 +761,106 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
     }
 
     @Override
-    public void atualizaQuantidadeRuido(Integer area, Integer noise) {
-        if(area.equals(1)) {
-            if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
-                LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-            //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+    public void atualizaQuantidadeRuido(Integer area, String noise, Integer db) {
+        //noise = NOISE_ON, NOISE_OFF
+        if (area.equals(1)) {
+            if (noise.equals("NOISE_ON")) {
+                if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    LabeSomA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                }
+            } else if (noise.equals("NOISE_OFF")) {
+                //setar icone OFF
             }
-        }
-        else if(area.equals(2)) {
-             if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+        } else if (area.equals(2)) {
+            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
                 LabeSomA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-            //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
             }
-        }
-        else if(area.equals(3)) {
-             if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+        } else if (area.equals(3)) {
+            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
                 LabeSomA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-            //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
             }
-        }
-        else if(area.equals(4)) {
-             if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+        } else if (area.equals(4)) {
+            if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
                 LabeSomA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-            //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
+                //verificar a hora atual e ver se esta em horario inadequado, se SIM, setar o icone
             }
         }
     }
 
     //TEMPERATURE MONITOR
-    
     @Override
     public void atualizaTemperatura(Integer area, float temperature) {
-        if(area.equals(1)) {
-            if(temperature <= 10){
+        if (area.equals(1)) {
+            if (temperature <= 10) {
                 LabeTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                 LabeTempA1.setText("" + temperature);
-            }
-            else if(temperature > 10 && temperature <= 20){
+            } else if (temperature > 10 && temperature <= 20) {
                 LabeTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                 LabeTempA1.setText("" + temperature);
-            }
-            else if(temperature > 20 && temperature <= 30){
+            } else if (temperature > 20 && temperature <= 30) {
                 LabeTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                 LabeTempA1.setText("" + temperature);
-            }
-            else if(temperature > 30 && temperature <= 40){
+            } else if (temperature > 30 && temperature <= 40) {
                 LabeTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                 LabeTempA1.setText("" + temperature);
-            }
-            else if(temperature > 40){
+            } else if (temperature > 40) {
                 LabeTempA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                 LabeTempA1.setText("" + temperature);
             }
             //seta icone ligado e mostrar o valor da temperatura
-        }
-        else if(area.equals(2)) {
-            if(temperature <= 10){
+        } else if (area.equals(2)) {
+            if (temperature <= 10) {
                 LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                 LabeTempA2.setText("" + temperature);
-            }
-            else if(temperature > 10 && temperature <= 20){
+            } else if (temperature > 10 && temperature <= 20) {
                 LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                 LabeTempA2.setText("" + temperature);
-            }
-            else if(temperature > 20 && temperature <= 30){
+            } else if (temperature > 20 && temperature <= 30) {
                 LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                 LabeTempA2.setText("" + temperature);
-            }
-            else if(temperature > 30 && temperature <= 40){
+            } else if (temperature > 30 && temperature <= 40) {
                 LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                 LabeTempA2.setText("" + temperature);
-            }
-            else if(temperature > 40){
+            } else if (temperature > 40) {
                 LabeTempA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                 LabeTempA2.setText("" + temperature);
             }
             //seta icone ligado e mostrar o valor da temperatura
-        }
-        else if(area.equals(3)) {
-            if(temperature <= 10){
+        } else if (area.equals(3)) {
+            if (temperature <= 10) {
                 LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                 LabeTempA3.setText("" + temperature);
-            }
-            else if(temperature > 10 && temperature <= 20){
+            } else if (temperature > 10 && temperature <= 20) {
                 LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                 LabeTempA3.setText("" + temperature);
-            }
-            else if(temperature > 20 && temperature <= 30){
+            } else if (temperature > 20 && temperature <= 30) {
                 LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                 LabeTempA3.setText("" + temperature);
-            }
-            else if(temperature > 30 && temperature <= 40){
+            } else if (temperature > 30 && temperature <= 40) {
                 LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                 LabeTempA3.setText("" + temperature);
-            }
-            else if(temperature > 40){
+            } else if (temperature > 40) {
                 LabeTempA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                 LabeTempA3.setText("" + temperature);
             }
             //seta icone ligado e mostrar o valor da temperatura
-        }
-        else if(area.equals(4)) {
-            if(temperature <= 10){
+        } else if (area.equals(4)) {
+            if (temperature <= 10) {
                 LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp1.png")));
                 LabeTempA4.setText("" + temperature);
-            }
-            else if(temperature > 10 && temperature <= 20){
+            } else if (temperature > 10 && temperature <= 20) {
                 LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp2.png")));
                 LabeTempA4.setText("" + temperature);
-            }
-            else if(temperature > 20 && temperature <= 30){
+            } else if (temperature > 20 && temperature <= 30) {
                 LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp3.png")));
                 LabeTempA4.setText("" + temperature);
-            }
-            else if(temperature > 30 && temperature <= 40){
+            } else if (temperature > 30 && temperature <= 40) {
                 LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp4.png")));
                 LabeTempA4.setText("" + temperature);
-            }
-            else if(temperature > 40){
+            } else if (temperature > 40) {
                 LabeTempA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/temp5.png")));
                 LabeTempA4.setText("" + temperature);
             }
@@ -911,71 +870,67 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
     @Override
     public void atualizaClimaBom(Integer area, boolean clima) {
-        if(area.equals(1)) {
-            if(clima == true){
-                 LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-            //seta icone ligado
-            }else{
-                 LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+        //
+        if (area.equals(1)) {
+            if (clima == true) {
+                LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                //seta icone ligado
+            } else {
+                LabelSolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
             }
-        }
-        else if(area.equals(2)) {
-            if(clima == true){
-                 LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-            //seta icone ligado
-            }else{
-                 LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+        } else if (area.equals(2)) {
+            if (clima == true) {
+                LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                //seta icone ligado
+            } else {
+                LabelSolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
             }
-        }
-        else if(area.equals(3)) {
-            if(clima == true){
-                 LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-            //seta icone ligado
-            }else{
-                 LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+        } else if (area.equals(3)) {
+            if (clima == true) {
+                LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                //seta icone ligado
+            } else {
+                LabelSolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
             }
-        }
-        else if(area.equals(4)) {
-            if(clima == true){
-                 LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
-            //seta icone ligado
-            }else{
-                 LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
+        } else if (area.equals(4)) {
+            if (clima == true) {
+                LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/sol.png")));
+                //seta icone ligado
+            } else {
+                LabelSolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Semsol.png")));
             }
         }
     }
 
     @Override
     public void atualizaIncidenciaDeIncendio(Integer area, boolean isFire) {
-        if(area.equals(1)) {
-            if(isFire == true){
+        //
+        if (area.equals(1)) {
+            if (isFire == true) {
                 LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
-            //seta icone ligado
-            }else{
+                //seta icone ligado
+            } else {
                 LabeFogoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
             }
-        }
-        else if(area.equals(2)) {
-            if(isFire == true){
+        } else if (area.equals(2)) {
+            if (isFire == true) {
                 LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
-            //seta icone ligado
-            }else{
+                //seta icone ligado
+            } else {
                 LabeFogoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
             }
-        }
-        else if(area.equals(3)) {
-            if(isFire == true){
+        } else if (area.equals(3)) {
+            if (isFire == true) {
                 LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
-            //seta icone ligado
-            }else{
+                //seta icone ligado
+            } else {
                 LabeFogoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
             }
-        }
-        else if(area.equals(4)) {
-            if(isFire == true){
+        } else if (area.equals(4)) {
+            if (isFire == true) {
                 LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Fogo.png")));
-            //seta icone ligado
-            }else{
+                //seta icone ligado
+            } else {
                 LabeFogoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemFogo.png")));
             }
         }
@@ -983,103 +938,89 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
     @Override
     public void atualizaClimaQuenteESeco(Integer area, boolean hotDry) {
-        if(area.equals(1)) {
-            if(hotDry == true){
-               LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-            //seta icone ligado
-            }else{
-               LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+        //
+        if (area.equals(1)) {
+            if (hotDry == true) {
+                LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                //seta icone ligado
+            } else {
+                LabelSecQueA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             }
-        }
-        else if(area.equals(2)) {
-            if(hotDry == true){
-               LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-            //seta icone ligado
-            }else{
-               LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+        } else if (area.equals(2)) {
+            if (hotDry == true) {
+                LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                //seta icone ligado
+            } else {
+                LabelSecQueA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             }
-        }
-        else if(area.equals(3)) {
-            if(hotDry == true){
-               LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-            //seta icone ligado
-            }else{
-               LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+        } else if (area.equals(3)) {
+            if (hotDry == true) {
+                LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                //seta icone ligado
+            } else {
+                LabelSecQueA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             }
-        }
-        else if(area.equals(4)) {
-            if(hotDry == true){
-               LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
-            //seta icone ligado
-            }else{
-               LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
+        } else if (area.equals(4)) {
+            if (hotDry == true) {
+                LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon.png")));
+                //seta icone ligado
+            } else {
+                LabelSecQueA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/eyes-on-fire-icon-sem.png")));
             }
         }
     }
-    
+
     //DUMP MONITOR
-    
     @Override
     public void atualizaQuantidadeLixo(Integer area, String content) {
-            
-        if(area.equals(1)) {
-           if(content.equals("VAZIA")) {
+        //
+        if (area.equals(1)) {
+            if (content.equals("VAZIA")) {
                 LabelLixoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoVazia.png")));
                 //seta icone vazia
-               System.out.println("funcao funcionando"+area+content);
-            }
-            else if(content.equals("ENCHENDO")) {
+                System.out.println("funcao funcionando" + area + content);
+            } else if (content.equals("ENCHENDO")) {
                 LabelLixoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendo.png")));
                 //seta icone enchendo
-                System.out.println("funcao funcionando"+area+content);
-            }
-           else if(content.equals("CHEIA")) {
+                System.out.println("funcao funcionando" + area + content);
+            } else if (content.equals("CHEIA")) {
                 LabelLixoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoCheio.png")));
                 //seta icone cheia
-               System.out.println("funcao funcionando"+area+content);
+                System.out.println("funcao funcionando" + area + content);
             }
-        }
-        else if(area.equals(2)) {
-            if(content.equals("VAZIA")) {
+        } else if (area.equals(2)) {
+            if (content.equals("VAZIA")) {
                 LabelLixoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoVazia.png")));
                 //seta icone vazia
-                System.out.println("funcao funcionando"+area+content);
-            }
-            else if(content.equals("ENCHENDO")) {
+                System.out.println("funcao funcionando" + area + content);
+            } else if (content.equals("ENCHENDO")) {
                 LabelLixoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendo.png")));
                 //seta icone enchendo
-                System.out.println("funcao funcionando"+area+content);
-            }
-           else if(content.equals("CHEIA")) {
+                System.out.println("funcao funcionando" + area + content);
+            } else if (content.equals("CHEIA")) {
                 LabelLixoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoCheio.png")));
                 //seta icone cheia
-               System.out.println("funcao funcionando"+area+content);
+                System.out.println("funcao funcionando" + area + content);
             }
-        }
-        else if(area.equals(3)) {
-            if(content.equals("VAZIA")) {
+        } else if (area.equals(3)) {
+            if (content.equals("VAZIA")) {
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoVazia.png")));
                 //seta icone vazia
-            }
-            else if(content.equals("ENCHENDO")) {
+            } else if (content.equals("ENCHENDO")) {
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendo.png")));
                 //seta icone enchendo
-            }
-           else if(content.equals("CHEIA")) {
+            } else if (content.equals("CHEIA")) {
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoCheio.png")));
                 //seta icone cheia
             }
-        }
-        else if(area.equals(4)) {
-            if(content.equals("VAZIA")) {
+        } else if (area.equals(4)) {
+            if (content.equals("VAZIA")) {
                 LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoVazia.png")));
                 //seta icone vazia
-            }
-            else if(content.equals("ENCHENDO")) {
+            } else if (content.equals("ENCHENDO")) {
                 LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendo.png")));
                 //seta icone enchendo
-            }
-           else if(content.equals("CHEIA")) {
+            } else if (content.equals("CHEIA")) {
                 LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoCheio.png")));
                 //seta icone cheia
             }
@@ -1088,47 +1029,43 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
 
     @Override
     public void atualizaAgenteProximo(Integer area, String status, String agentNearName) {
-        if(area.equals(1)) {
-            if(agentNearName.equals("LIMITE")) {
+        //status= LIMITE, CHEIA, GATHERING_OFF
+        if (area.equals(1)) {
+            if (status.equals("LIMITE")) {
                 LabelLixoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendoLimite.png")));
                 //seta icone limite e avisar que esta no limite
-            }
-            else if(agentNearName.equals("CHEIA")) {
+            } else if (status.equals("CHEIA")) {
                 LabeAgeA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Caminhao.png")));
                 //seta o icone de cheia e diz que chamou o agente
+            } else if (status.equals("GATHERING_OFF")) {
+                //setar o icone OFF do agente
+                
             }
-        }
-        else if(area.equals(2)) {
-            if(agentNearName.equals("LIMITE")) {
+        } else if (area.equals(2)) {
+            if (status.equals("LIMITE")) {
                 LabelLixoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendoLimite.png")));
                 //seta icone limite e avisar que esta no limite
-            }
-            else if(agentNearName.equals("CHEIA")) {
+            } else if (status.equals("CHEIA")) {
                 LabeAgeA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Caminhao.png")));
                 //seta o icone de cheia e diz que chamou o agente
             }
-        }
-        else if(area.equals(3)) {
-            if(agentNearName.equals("LIMITE")) {
+        } else if (area.equals(3)) {
+            if (status.equals("LIMITE")) {
                 LabelLixoA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendoLimite.png")));
                 //seta icone limite e avisar que esta no limite
-            }
-            else if(agentNearName.equals("CHEIA")) {
+            } else if (status.equals("CHEIA")) {
                 LabeAgeA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Caminhao.png")));
                 //seta o icone de cheia e diz que chamou o agente
             }
-        }
-        else if(area.equals(4)) {
-            if(agentNearName.equals("LIMITE")) {
+        } else if (area.equals(4)) {
+            if (status.equals("LIMITE")) {
                 LabelLixoA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/LixoEnchendoLimite.png")));
                 //seta icone limite e avisar que esta no limite
-            }
-            else if(agentNearName.equals("CHEIA")) {
+            } else if (status.equals("CHEIA")) {
                 LabeAgeA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Caminhao.png")));
                 //seta o icone de cheia e diz que chamou o agente
             }
         }
     }
-    
-    //fim
+    //fim :p
 }

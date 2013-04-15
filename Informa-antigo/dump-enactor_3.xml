@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Enactor xmlns="http://www.contexttoolkit.org/ctk" name="dumpEnactor">
+
+	<InWidget  href="dump-widget-input_3.xml" />
+	<OutWidget href="informa-widget-output.xml" />
+	
+	<OutcomeName>dump</OutcomeName>
+	
+	<Reference name="empty">
+		<Query name="empty">
+			( AND
+				(EQUAL content 0)
+                                (EQUAL enableNotificatons true)
+			)
+		</Query>
+		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"VAZIA"</Outcome>
+		<ServiceInput service="informaService" function="trashMonitor">
+			<Attribute name="dump" />
+		</ServiceInput>
+	</Reference>
+	
+	<Reference name="filling">
+		<Query name="filling">
+			(AND
+				(GREATER content 0)
+				(LESS content 225)
+                                (EQUAL enableNotificatons true)
+			)
+		</Query>
+		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"ENCHENDO"</Outcome>
+		<ServiceInput service="informaService" function="trashMonitor">
+			<Attribute name="dump" />
+		</ServiceInput>
+	</Reference>
+	
+ 
+        
+        	<Reference name="flood">
+		<Query name="flood">
+			(AND
+                            (EQUAL content 250)
+                            (EQUAL enableNotificatons true)
+			)
+		</Query>
+		<Outcome outAttribute="dump">area+";"+"trashMonitor;"+"CHEIA"</Outcome>
+		<ServiceInput service="informaService" function="trashMonitor">
+			<Attribute name="dump" />
+		</ServiceInput>
+	</Reference>
+        
+	<Reference name="limit">
+		<Query name="limit">
+			(AND
+                            (EQUAL content 225)
+                            (EQUAL enableNotificatons true)
+			)
+		</Query>
+		<Outcome outAttribute="dump">area+";"+"trashGathering;"+"LIMITE;"+agentNearName</Outcome>
+		<ServiceInput service="informaService" function="trashGathering">
+			<Attribute name="dump" />
+		</ServiceInput>
+	</Reference>
+        
+       	<Reference name="floodGathering">
+		<Query name="floodGathering">
+			(AND
+                            (EQUAL content 250)
+                            (EQUAL enableNotificatons true)
+			)
+		</Query>
+		<Outcome outAttribute="dump">area+";"+"trashGathering;"+"CHEIA;"+agentNearName</Outcome>
+		<ServiceInput service="informaService" function="trashGathering">
+			<Attribute name="dump" />
+		</ServiceInput>
+	</Reference>
+        
+</Enactor>

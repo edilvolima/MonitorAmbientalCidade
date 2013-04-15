@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Widget xmlns="http://www.contexttoolkit.org/ctk" name="dumpWidget3">		
+	<Attributes>
+		<Attribute name="content" type="int"/>
+		<Attribute name="agentNearName" type="string"/>
+		<Attribute name="area" type="int"/>
+                <Attribute name="enableNotificatons" type="boolean"/>
+	</Attributes>	
+</Widget>

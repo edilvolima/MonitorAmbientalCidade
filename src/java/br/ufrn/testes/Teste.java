@@ -22,20 +22,16 @@ public class Teste {
         InstanciaWidget instanciaWidget = InstanciaWidget.getInstance();
         AtualizarWidgets atualizarWidgets = ConcreteAtualizarWidgets.getInstance();
         
-//        AtualizarWidgets atualizarWidgets = new ConcreteAtualizarWidgets();
         
-//          atualizarWidgets.atualizarTemeperatura(2, 10);
-//          atualizarWidgets.atualizarTemeperatura(3, 30);
-        
-          atualizarWidgets.atualizarQuantidadeLixo(3, 120);
+          //atualizarWidgets.atualizarQuantidadeLixo(3, 120);
           //atualizarWidgets.atualizarQuantidadeLixo(1, 150);
-          atualizarWidgets.atualizarQuantidadeLixo(3, 250);
-          atualizarWidgets.atualizarQuantidadeLixo(1, 250);
+          //atualizarWidgets.atualizarQuantidadeLixo(3, 250);
+          //atualizarWidgets.atualizarQuantidadeLixo(1, 250);
           atualizarWidgets.atualizarQuantidadeLixo(1, 100);
-          //atualizarWidgets.atualizarQuantidadeLixo(2, 0);
-          atualizarWidgets.atualizarQuantidadeLixo(2, 250);
+          atualizarWidgets.atualizarQuantidadeLixo(4, 235);
+          //atualizarWidgets.atualizarQuantidadeLixo(2, 230);
           atualizarWidgets.atualizarQuantidadeLixo(2, 150);
-          //atualizarWidgets.atualizarQuantidadeLixo(3, 0);
+          atualizarWidgets.atualizarQuantidadeLixo(3, 240);
           
 //        atualizarWidgets.atualizarIndicePoluicao(1, 290);
         
