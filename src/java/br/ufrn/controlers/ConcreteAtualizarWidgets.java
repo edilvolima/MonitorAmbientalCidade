@@ -14,7 +14,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     
    private static ConcreteAtualizarWidgets atualizarWidgets;
    
-   public static synchronized ConcreteAtualizarWidgets getInstance(){
+   public static ConcreteAtualizarWidgets getInstance(){
        
        if(atualizarWidgets == null){
            atualizarWidgets = new ConcreteAtualizarWidgets();
@@ -22,7 +22,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
        return atualizarWidgets;
    }
    
-   private ConcreteAtualizarWidgets() {
+   public ConcreteAtualizarWidgets() {
     }
     
      //=====PollutionWidget=====
@@ -148,11 +148,11 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     //=====DumpWidget===
     
    @Override
-    public void atualizarQuantidadeLixo(Integer area, int trash) {
+    public void atualizarQuantidadeLixo(Integer area, int content) {
         AtualizarDumpWidget dumpWidget = dumpWdgets.get(area);
         
         if(dumpWidget != null){
-            dumpWidget.atualizarQuantidadeLixo(area, trash);
+            dumpWidget.atualizarQuantidadeLixo(area, content);
         }
         else{
             System.out.println("não existe um dump widget associado à area "+area);

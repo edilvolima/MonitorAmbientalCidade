@@ -20,7 +20,7 @@ public class MonitoramentoPoluicao implements AtualizarPollutionWidget{
 	protected InformaService informaService;
 	
 
-	public MonitoramentoPoluicao(Integer area, MonitorCidade monitor) {
+	public MonitoramentoPoluicao(Integer area/*, MonitorCidade monitor*/) {
 //		
 		//IN Widgets
 		pollutionIN = WidgetXmlParser.createWidget("Informa/pollution-widget-input.xml");
@@ -31,7 +31,7 @@ public class MonitoramentoPoluicao implements AtualizarPollutionWidget{
 		informaOUT = WidgetXmlParser.createWidget("Informa/informa-widget-output.xml");
                 informaOUT.setId("area "+area);
                             
-		informaService = new InformaService(informaOUT, monitor);
+		informaService = new InformaService(informaOUT/*, monitor*/);
 		informaOUT.addService(informaService);
 		
 		//Enactors

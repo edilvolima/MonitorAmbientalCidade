@@ -20,7 +20,7 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 	protected InformaService informaService;
 	
 
-	public MonitoramentoLixeira(Integer area, MonitorCidade monitor) {
+	public MonitoramentoLixeira(Integer area/*, MonitorCidade monitor*/) {
 		
 //                                         
 		//IN Widgets
@@ -34,7 +34,7 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 		informaOUT = WidgetXmlParser.createWidget("Informa/informa-widget-output.xml");
                             
                             
-		informaService = new InformaService(informaOUT, monitor);
+		informaService = new InformaService(informaOUT/*, monitor*/);
 		informaOUT.addService(informaService);
 		
 		//Enactors
@@ -49,7 +49,7 @@ public class MonitoramentoLixeira implements AtualizarDumpWidget{
 //        if(Integer.parseInt(id) == area){
             dumpIN.updateData("content", content);
             System.out.println("atualizado quantidade de lixeira "+area+content);
-        //}
+//        }
             
     }
 

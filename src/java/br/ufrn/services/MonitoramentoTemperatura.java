@@ -20,7 +20,7 @@ public class MonitoramentoTemperatura implements AtualizarTemperatureWidget{
 	protected InformaService informaService;
 	
 
-	public MonitoramentoTemperatura(Integer area, MonitorCidade monitor) {
+	public MonitoramentoTemperatura(Integer area/*, MonitorCidade monitor*/) {
 		
 		//IN Widgets
 		temperatureIN = WidgetXmlParser.createWidget("Informa/temperature-widget-input.xml");
@@ -32,7 +32,7 @@ public class MonitoramentoTemperatura implements AtualizarTemperatureWidget{
 		informaOUT = WidgetXmlParser.createWidget("Informa/informa-widget-output.xml");
                 informaOUT.setId("area "+area);
                             
-		informaService = new InformaService(informaOUT, monitor);
+		informaService = new InformaService(informaOUT/*, monitor*/);
 		informaOUT.addService(informaService);
 		
 		//Enactors

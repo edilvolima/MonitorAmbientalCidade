@@ -29,11 +29,11 @@ public class InformaService extends Service {
     public static final String TRASH = "trashMonitor";
     public static final String GATHERING = "trashGathering";
     
-    private MonitorCidade cidade;
+    private MonitorCidade cidade = MonitorCidade.getInstance();
     
        
             @SuppressWarnings("serial")
-            public InformaService(final Widget widget, MonitorCidade cidade) {
+            public InformaService(final Widget widget/*, MonitorCidade cidade*/) {
                     super(widget, SERVICE,
                                     new FunctionDescriptions() {
                             { // constructor
@@ -83,8 +83,8 @@ public class InformaService extends Service {
                                    add(new FunctionDescription(
                                                     TRASH,
                                                     "mostra o nível de lixo da lixeira e avisa quando a lixeira esta bem próxima de encher.",
-                                                    widget.getNonConstantAttributes()));//,
-                                                    //FunctionDescription.FUNCTION_SYNC));
+                                                    widget.getNonConstantAttributes(),
+                                                    FunctionDescription.FUNCTION_SYNC));
                                    add(new FunctionDescription(
                                                     GATHERING,
                                                     "chama um agente de coleta mais próximo.",
@@ -93,7 +93,7 @@ public class InformaService extends Service {
                             }
                     });
 
-                    this.cidade = cidade;
+//                    this.cidade = cidade;
 
             }
 
@@ -108,7 +108,7 @@ public class InformaService extends Service {
                     //String contextTemperature = serviceInput.getInput().getAttributeValue("temperature");
                     //System.out.println(contextTemperature);
                     
-                    //String contextDump = serviceInput.getInput().getAttributeValue("dump");
+                    String contextDump = serviceInput.getInput().getAttributeValue("dump");
                     //System.out.println(contextDump);
                    
                     /**
@@ -195,25 +195,26 @@ public class InformaService extends Service {
 //                     Dump situation
                     
                     else if (functionName.equals(TRASH)) {
-                        String contextDump = serviceInput.getInput().getAttributeValue("dump");
+                        //String contextDump = serviceInput.getInput().getAttributeValue("dump");
                         String valoresD[] = contextDump.split(";");
                         System.out.println(contextDump);
                                                
                         if (valoresD[2].equals("VAZIA")) {
-                            System.out.println("usando funcao do servico para "+valoresD[1]+" da area "+valoresD[0]);
                             cidade.atualizaQuantidadeLixo(Integer.parseInt(valoresD[0]), valoresD[2]);   
-                             //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
+                            System.out.println("usando funcao do servico para "+valoresD[1]+" da area "+valoresD[0]);
                         }else if (valoresD[2].equals("ENCHENDO")) {
                             cidade.atualizaQuantidadeLixo(Integer.parseInt(valoresD[0]),valoresD[2]);   
-                            //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
+                            System.out.println("usando funcao do servico para "+valoresD[1]+" da area "+valoresD[0]);
                         }else if (valoresD[2].equals("CHEIA")) {
                             cidade.atualizaQuantidadeLixo(Integer.parseInt(valoresD[0]),valoresD[2]);  
-                            //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
+                            System.out.println("usando funcao do servico para "+valoresD[1]+" da area "+valoresD[0]);
+                        }else{
+                            System.out.println("sem alteracao no contexto "+valoresD[1]+" da area "+valoresD[0]);
                         }                       
                     }
                     // alerts you when is borderline calls and agent catcher.
                     else if (functionName.equals(GATHERING)) {
-                        String contextDump = serviceInput.getInput().getAttributeValue("dump");
+                        //String contextDump = serviceInput.getInput().getAttributeValue("dump");
                         String valoresD[] = contextDump.split(";");
                         //System.out.println(contextDump);
                                                 
@@ -222,12 +223,12 @@ public class InformaService extends Service {
                             //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
                         }else if (valoresD[2].equals("CHEIA")) {
                             cidade.atualizaAgenteProximo(Integer.parseInt(valoresD[0]),valoresD[2], valoresD[3]);
-                           // System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
+                            //System.out.println("usando funcao do servico para"+valoresD[1]+"da area"+valoresD[0]);
                         }                                             
                     }
                     
-                    //return null;
-                    return new DataObject();
+                    return null;
+                    //return new DataObject();
 
             }
 }

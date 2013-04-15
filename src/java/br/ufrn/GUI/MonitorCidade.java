@@ -820,20 +820,25 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
             }
             else if(content.equals("ENCHENDO")) {
                 //seta icone enchendo
+                System.out.println("funcao funcionando"+area+content);
             }
            else if(content.equals("CHEIA")) {
                 //seta icone cheia
+               System.out.println("funcao funcionando"+area+content);
             }
         }
         else if(area.equals(2)) {
             if(content.equals("VAZIA")) {
                 //seta icone vazia
+                System.out.println("funcao funcionando"+area+content);
             }
             else if(content.equals("ENCHENDO")) {
                 //seta icone enchendo
+                System.out.println("funcao funcionando"+area+content);
             }
            else if(content.equals("CHEIA")) {
                 //seta icone cheia
+               System.out.println("funcao funcionando"+area+content);
             }
         }
         else if(area.equals(3)) {

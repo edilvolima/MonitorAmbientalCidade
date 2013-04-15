@@ -28,11 +28,10 @@ public class InstanciaWidget {
     private final MonitoramentoTemperatura mta3;
 //    private final MonitoramentoTemperatura mta4;
     
-    private MonitorCidade monitor;
       
     private static InstanciaWidget INSTANCIA_WIDGET;
 
-    public static synchronized InstanciaWidget getInstance() {
+    public static InstanciaWidget getInstance() {
 
         if (INSTANCIA_WIDGET == null) {
             INSTANCIA_WIDGET = new InstanciaWidget();
@@ -48,17 +47,29 @@ public class InstanciaWidget {
         
         System.out.println("Inicializando componentes...");
         
-        mta1 = new MonitoramentoTemperatura(1, monitor);
-    	mpa1 = new MonitoramentoPoluicao(1, monitor);
-        mla1 = new MonitoramentoLixeira(1, monitor);
+        mta1 = new MonitoramentoTemperatura(1);
+    	mpa1 = new MonitoramentoPoluicao(1);
+        mla1 = new MonitoramentoLixeira(1);
         
-        mta2 = new MonitoramentoTemperatura(2, monitor);
-        mpa2 = new MonitoramentoPoluicao(2, monitor);
-        mla2 = new MonitoramentoLixeira(2, monitor);
+        mta2 = new MonitoramentoTemperatura(2);
+        mpa2 = new MonitoramentoPoluicao(2);
+        mla2 = new MonitoramentoLixeira(2);
         
-        mta3 = new MonitoramentoTemperatura(3, monitor);
-        mpa3 = new MonitoramentoPoluicao(3, monitor);
-        mla3 = new MonitoramentoLixeira(3, monitor);
+        mta3 = new MonitoramentoTemperatura(3);
+        mpa3 = new MonitoramentoPoluicao(3);
+        mla3 = new MonitoramentoLixeira(3);
+        
+//        mta1 = new MonitoramentoTemperatura(1, monitor);
+//    	mpa1 = new MonitoramentoPoluicao(1, monitor);
+//        mla1 = new MonitoramentoLixeira(1, monitor);
+//        
+//        mta2 = new MonitoramentoTemperatura(2, monitor);
+//        mpa2 = new MonitoramentoPoluicao(2, monitor);
+//        mla2 = new MonitoramentoLixeira(2, monitor);
+//        
+//        mta3 = new MonitoramentoTemperatura(3, monitor);
+//        mpa3 = new MonitoramentoPoluicao(3, monitor);
+//        mla3 = new MonitoramentoLixeira(3, monitor);
 //        
 //        mta4 = new MonitoramentoTemperatura(4, monitor);
 //    	mpa4 = new MonitoramentoPoluicao(4, monitor);
