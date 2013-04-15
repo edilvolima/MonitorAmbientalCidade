@@ -199,15 +199,27 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LabelUmiA1">
+                <Component class="javax.swing.JLabel" name="LabelSolA1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/br/ufrn/Imagens/drop.png"/>
+                      <Image iconType="3" name="/br/ufrn/Imagens/Semsol.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="40" width="-1" height="40"/>
+                      <AbsoluteConstraints x="180" y="40" width="-1" height="50"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="LabelNuvMovA1">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/br/ufrn/Imagens/no-wind-cloud.png"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="220" y="50" width="40" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -376,15 +388,27 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LabelUmiA2">
+                <Component class="javax.swing.JLabel" name="LabelNuvMovA2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/br/ufrn/Imagens/drop.png"/>
+                      <Image iconType="3" name="/br/ufrn/Imagens/no-wind-cloud.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="210" y="50" width="-1" height="40"/>
+                      <AbsoluteConstraints x="250" y="60" width="40" height="30"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="LabelSolA2">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/br/ufrn/Imagens/Semsol.png"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="210" y="50" width="-1" height="50"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -552,15 +576,27 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LabelUmiA3">
+                <Component class="javax.swing.JLabel" name="LabelNuvMovA3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/br/ufrn/Imagens/drop.png"/>
+                      <Image iconType="3" name="/br/ufrn/Imagens/no-wind-cloud.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="220" y="50" width="-1" height="40"/>
+                      <AbsoluteConstraints x="260" y="60" width="40" height="30"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="LabelSolA3">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/br/ufrn/Imagens/Semsol.png"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="220" y="50" width="-1" height="50"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -728,15 +764,27 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LabelUmiA4">
+                <Component class="javax.swing.JLabel" name="LabelNuvMovA4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/br/ufrn/Imagens/drop.png"/>
+                      <Image iconType="3" name="/br/ufrn/Imagens/no-wind-cloud.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="190" y="50" width="-1" height="40"/>
+                      <AbsoluteConstraints x="230" y="60" width="40" height="30"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="LabelSolA4">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/br/ufrn/Imagens/Semsol.png"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="190" y="50" width="-1" height="50"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -832,7 +880,7 @@
                       <Component id="jLabel6" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="LabelUmiA5" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace pref="19" max="32767" attributes="0"/>
+                      <EmptySpace pref="18" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
