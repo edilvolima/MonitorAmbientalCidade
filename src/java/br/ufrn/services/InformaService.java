@@ -166,7 +166,7 @@ public class InformaService extends Service {
                         String context = serviceInput.getInput().getAttributeValue("area");
                         String valoresT[] = context.split(";");
                         
-                        cidade.atualizaTemperatura(Integer.parseInt(valoresT[0]), Float.parseFloat(valoresT[2]));
+                        cidade.atualizaTemperatura(Integer.parseInt(valoresT[0]), Integer.parseInt(valoresT[2]));
                     }
                     
                     // beautiful Weather

@@ -22,7 +22,7 @@ public interface AtualizaMonitor {
     public void atualizaQuantidadeRuido(Integer area, String noise, Integer db);
 
     //atualiza icones sobre temperatura
-    public void atualizaTemperatura(Integer area, float temperature);
+    public void atualizaTemperatura(Integer area, Integer temperature);
 
     public void atualizaClimaBom(Integer area, boolean clima);
 

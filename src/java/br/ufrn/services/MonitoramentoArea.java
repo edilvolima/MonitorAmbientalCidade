@@ -51,7 +51,7 @@ public class MonitoramentoArea implements AtualizarWidgets {
     }
 
     @Override
-    public void atualizarQuantidadeLixo(Integer area, int content) {
+    public void atualizarQuantidadeLixo(Integer area, Integer content) {
         try {
             Thread.sleep(100);
         } catch (InterruptedException ex) {
@@ -68,18 +68,18 @@ public class MonitoramentoArea implements AtualizarWidgets {
     }
 
     @Override
-    public void atualizarIndicePoluicao(Integer area, int indexPolluition) {
+    public void atualizarIndicePoluicao(Integer area, Integer indexPolluition) {
         areaIN.updateData("indexPollution", indexPolluition);
         System.out.println("atualizado indice de poluicao " + area + indexPolluition);
     }
 
     @Override
-    public void atualizarFluxoDeVeiculos(Integer area, int vehicleFlow) {
+    public void atualizarFluxoDeVeiculos(Integer area, Integer vehicleFlow) {
         areaIN.updateData("vehicleFlow", vehicleFlow);
     }
 
     @Override
-    public void atualizarVelociadeDoVento(Integer area, int windSpeed) {
+    public void atualizarVelociadeDoVento(Integer area, Integer windSpeed) {
         areaIN.updateData("windSpeed", windSpeed);
     }
 
@@ -89,23 +89,23 @@ public class MonitoramentoArea implements AtualizarWidgets {
     }
 
     @Override
-    public void atualizarProbalidadeChuva(Integer area, int willRain) {
+    public void atualizarProbalidadeChuva(Integer area, Integer willRain) {
         areaIN.updateData("willRain", willRain);
     }
 
     @Override
-    public void atualizarQuantidadeRuido(Integer area, int noise) {
+    public void atualizarQuantidadeRuido(Integer area, Integer noise) {
         areaIN.updateData("noise", noise);
     }
 
     @Override
-    public void atualizarTemeperatura(Integer area, float temperature) {
+    public void atualizarTemeperatura(Integer area, Integer temperature) {
         areaIN.updateData("temperature", temperature);
         System.out.println("atualizado temeperatura " + area + temperature);
     }
 
     @Override
-    public void atualizarHumidade(Integer area, int humidity) {
+    public void atualizarHumidade(Integer area, Integer humidity) {
         areaIN.updateData("humidity", humidity);
     }
 

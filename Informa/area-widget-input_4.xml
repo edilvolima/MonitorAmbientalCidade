@@ -8,7 +8,7 @@
 		<Attribute name="noise" type="int"/>
                 
                 
-                <Attribute name="temperature" type="float"/>
+                <Attribute name="temperature" type="int"/>
 		<Attribute name="humidity" type="int"/>
 		<Attribute name="windSpeed" type="int"/>
 		<Attribute name="isFire" type="boolean"/>

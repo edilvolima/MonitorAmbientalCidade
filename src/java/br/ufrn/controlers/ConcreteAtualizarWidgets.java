@@ -29,7 +29,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
      //=====PollutionWidget=====
     
    @Override
-    public void atualizarIndicePoluicao(Integer area, int indexPolluition) {
+    public void atualizarIndicePoluicao(Integer area, Integer indexPolluition) {
         
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
@@ -41,7 +41,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     }
 
    @Override
-    public void atualizarFluxoDeVeiculos(Integer area, int vehicleFlow) {
+    public void atualizarFluxoDeVeiculos(Integer area, Integer vehicleFlow) {
          AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -53,7 +53,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
 
      //este metodo deve atualizar o PollutionWidget e o TemperatureWidget
    @Override
-    public void atualizarVelociadeDoVento(Integer area, int windSpeed) {
+    public void atualizarVelociadeDoVento(Integer area, Integer windSpeed) {
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -77,7 +77,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     }
 
    @Override
-    public void atualizarProbalidadeChuva(Integer area, int willRain) {
+    public void atualizarProbalidadeChuva(Integer area, Integer willRain) {
        AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -88,7 +88,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     }
 
    @Override
-    public void atualizarQuantidadeRuido(Integer area, int noise) {
+    public void atualizarQuantidadeRuido(Integer area, Integer noise) {
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -101,7 +101,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     //======TemperatureWidget=====
     
    @Override
-    public void atualizarTemeperatura(Integer area, float temperature) {
+    public void atualizarTemeperatura(Integer area, Integer temperature) {
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -112,7 +112,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     }
 
    @Override
-    public void atualizarHumidade(Integer area, int humidity) {
+    public void atualizarHumidade(Integer area, Integer humidity) {
       AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
@@ -136,7 +136,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     //=====DumpWidget===
     
    @Override
-    public void atualizarQuantidadeLixo(Integer area, int content) {
+    public void atualizarQuantidadeLixo(Integer area, Integer content) {
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){
