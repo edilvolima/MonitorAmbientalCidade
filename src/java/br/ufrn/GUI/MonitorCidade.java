@@ -258,7 +258,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA2.setBounds(260, 80, 32, 50);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel5.setText(" 3");
+        jLabel5.setText(" 2");
         jPanel8.add(jLabel5);
         jLabel5.setBounds(30, 150, 30, 20);
 
@@ -327,9 +327,9 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA4.setBounds(210, 170, 32, 50);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel4.setText("  2");
+        jLabel4.setText("  4");
         jPanel10.add(jLabel4);
-        jLabel4.setBounds(310, 80, 40, 30);
+        jLabel4.setBounds(310, 80, 40, 40);
 
         Balao4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/Imagens/balao_esq_inf (3).png"))); // NOI18N
         jPanel10.add(Balao4);
@@ -396,7 +396,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         LabelSolA3.setBounds(250, 180, 32, 50);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel7.setText(" 4");
+        jLabel7.setText(" 3");
         jPanel9.add(jLabel7);
         jLabel7.setBounds(20, 90, 30, 30);
 
