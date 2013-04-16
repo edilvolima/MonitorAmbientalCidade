@@ -270,7 +270,7 @@ public class MonitorCidade extends javax.swing.JFrame implements AtualizaMonitor
         jPanel8.setBounds(0, 70, 370, 230);
 
         jPanel1.add(jPanel3);
-        jPanel3.setBounds(450, 80, 360, 270);
+        jPanel3.setBounds(440, 80, 360, 270);
 
         jPanel6.setOpaque(false);
         jPanel6.setLayout(null);
