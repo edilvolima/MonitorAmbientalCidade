@@ -28,7 +28,7 @@ public interface AtualizarWidgets {
     public void atualizarQuantidadeRuido(Integer area, int noise);
 
     //======TemperatureWidget=====
-    public void atualizarTemeperatura(Integer area, int temperature);
+    public void atualizarTemeperatura(Integer area, float temperature);
 
     public void atualizarHumidade(Integer area, int humidity);
 

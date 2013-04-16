@@ -101,7 +101,7 @@ public class ConcreteAtualizarWidgets implements AtualizarWidgets{
     //======TemperatureWidget=====
     
    @Override
-    public void atualizarTemeperatura(Integer area, int temperature) {
+    public void atualizarTemeperatura(Integer area, float temperature) {
         AtualizarWidgets atualizar = areaWdgets.get(area);
         
         if(atualizar != null){

@@ -25,7 +25,6 @@ public class Publish {
         return topico;
     }
     
-    
     protected void criarTopico(){
         WebResource resource = client.resource(URL_BASE_HUB+"register");
         resource.put(topico);
@@ -35,7 +34,5 @@ public class Publish {
         WebResource resource = client.resource(URL_BASE_HUB+"publish/"+topico);
         resource.put(mensagem);
     }
-    
-    
     
 }

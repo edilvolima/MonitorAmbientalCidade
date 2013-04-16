@@ -99,7 +99,7 @@ public class MonitoramentoArea implements AtualizarWidgets {
     }
 
     @Override
-    public void atualizarTemeperatura(Integer area, int temperature) {
+    public void atualizarTemeperatura(Integer area, float temperature) {
         areaIN.updateData("temperature", temperature);
         System.out.println("atualizado temeperatura " + area + temperature);
     }
